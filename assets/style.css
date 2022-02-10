@@ -1,0 +1,137 @@
+/* declarar variavel na raiz do documento
+Para importar fontes usar o google fonts 
+formatação base */
+:root{
+    --vermelho:#e50914;
+    --preta:#141414;
+
+}
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+
+}
+
+/* formatação para toda a pagina */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-between;
+    
+       
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header .logo{
+     margin-left: 5px;
+     color: var(--vermelho);
+     font-family: 'Arial Black', times;
+     font-size: 40px;
+    
+ }
+ header nav a{
+     color:#AAA;
+     text-decoration:none; /* tira o sublinhado do link */
+     margin-right: 10px;
+     
+         
+}
+header nav a:hover{    /* ação quando o cursor passa pelo objeto */
+color:#fff;
+}
+
+/* formatação filme principal */
+
+.Filme-principal{
+    font-size: 20px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%) , url("/img/capa-house.jpg");
+
+    height: 400px;
+    background-size: cover;
+    
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+}
+
+.Filme-principal .descricao{
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.Filme-principal .Titulo{
+    margin-top: 15%;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+button{
+     background-color: rgba(0,0,0,.50); /* efeito transparencia */
+    border: none;
+    color:white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all; /* animação   */
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+}
+
+button i{
+    margin: 5px;
+}
+
+.container{
+    margin-left: 20px;
+}
+ 
+.Filme-principal .container{
+    width: 80%;
+}
+
+.box-filme{
+height: 100%;
+width: 100%;
+display: block;
+}
+
+/* responsividade */
+@media screen and (max-width:700px) {
+    header .container{
+        display:flex;
+        flex-direction: column;
+    }
+    
+    button {
+        margin-top: 5px;
+        width: 300px;
+    } 
+}
+
+@media screen and (min-width:1000px) {
+    .descricao{
+        width: 50%;
+    }
+    
+}
+carrossel {
+    margin-top: 10px;
+}
